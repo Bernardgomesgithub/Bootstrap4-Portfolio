@@ -1,0 +1,555 @@
+/*
+Theme Name: 
+Author: bernardgomes20@gmail.com
+Support:  bernardgomes20@gmail.com
+Description: Portfolio Bootstrap 4 Template
+Version:1.0
+*/
+
+/* CSS Index
+--------------------------------------
+1.
+
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none !important;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+p
+{
+    font-size: 15px;
+}
+i
+{
+    color: #2fccd0;
+}
+
+/*#################################
+    
+    Banner section
+
+###################################
+*/
+
+.banner-heading h2
+{
+    margin-top: 250px;
+}
+#banner .banner-section
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),#000),url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.banner-section:before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: -1;
+    /*background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);*/
+}
+.banner-heading h2
+{
+    font-size: 55px;
+}
+.banner-heading p
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.banner-button a
+{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.banner-button a:hover
+{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/*#################################
+    
+    About section
+
+###################################
+*/
+#about .about-section
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about-heading h2
+{
+    margin-top: 45px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #222;
+    font-weight: bold;
+}
+.about-heading p
+{
+    margin-top: 10px;
+    color: #222;
+    text-align: justify;
+}
+/*#################################
+    
+    Grid section
+
+###################################
+*/
+#grid .grid-section
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.grid-1
+{
+    background: #fff;
+    border: medium none;
+    padding: 50px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.grid-1 h2
+{
+    font-size: 25px;
+}
+.grid-1:hover
+{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+}
+
+/*#################################
+    
+    Skill section
+
+###################################
+*/
+
+#skill .skill-section
+{
+    background: #f7f7f9;
+    padding: 50px 0;
+}
+.skill-section h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.skill-one h2
+{
+    color: #2e2e2e;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.skills-heading h2
+{
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 10px;
+    word-spacing: 4px;
+}
+.skills-heading p
+{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+.skill-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress
+{
+    height: 10px !important;
+    margin-bottom: 15px;
+}
+/*#################################
+    
+    Awards section
+
+###################################
+*/
+#awards .awards-section
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.awards-section
+{
+    background-image: url(../images/awards.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.awards-heading h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/*#################################
+    
+    Pricing section
+
+###################################
+*/
+#pricing .pricing-section
+{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    height: inherit;
+    position: relative;
+}
+.pricing-heading h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px; 
+}
+.pricing-section:before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #16c9f6;
+}
+.price-money
+{
+    font-size: 40px;
+    color: #222;
+}
+.pricing-area
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card-section
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-header
+{
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff;
+    padding: 20px;
+}
+.card-body
+{
+    padding: 30px 0px;
+}
+.card-body li
+{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #606060;
+}
+.card-footer
+{
+    background: #fff;
+    padding: 30px 0px;
+}
+.card
+{
+    transition: 0.4s;
+}
+.card:hover
+{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card-footer a
+{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 auto;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.card:hover .card-footer a
+{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header,.card:hover .price-money
+{
+    color: #50d1c0;
+}
+
+/*#########################################
+
+           Blog section
+
+##########################################*/
+
+#blog .blog-section
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.blog-heading h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.blog-heading p
+{
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog-span-area span
+{
+    color: #000;
+    font-weight: bold;
+}
+.blog-span-area p
+{
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+/*#########################################
+
+           portfolio section
+
+##########################################*/
+#portfolio .portfolio-section
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.portfolio-card
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.portfolio-heading h2
+{
+    font-size: 30px;
+}
+.portfolio-box
+{
+    height: 250px;
+    position: relative;
+    z-index: 1;
+}
+.portfolio-box:after
+{
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 9px;
+    background: #007bff;
+    width: 95%;
+    height: 92%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.portfolio-box:after,.portfolio-hover
+{
+    opacity: 0;
+    -webkit-transition: .3s linear 0s;
+    -o-transitions: .3s linear 0s;
+    transition: .3s linear 0s;
+}
+
+.portfolio-box:hover:after,.portfolio-box ,.portfolio-hover
+{
+    opacity: 1;
+}
+.hover-para
+{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+.hover-para span
+{
+    color: #fff;
+}
+.hover-para p
+{
+    color: #fff;
+}
+.portfolio-hover
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.bg-gallery-1
+{
+    background: rgba(0,0,0,0.9);
+    background-image: url(../images/portf1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-2
+{
+    background: rgba(0,0,0,0.9);
+    background-image: url(../images/portf2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-3
+{
+    background: rgba(0,0,0,0.9);
+    background-image: url(../images/portf3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-4
+{
+    background: rgba(0,0,0,0.9);
+    background-image: url(../images/portf4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-5
+{
+    background-image: url(../images/portf5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-6
+{
+    background-image: url(../images/portf6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-7
+{
+    background-image: url(../images/portf7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-gallery-8
+{
+    background-image: url(../images/portf8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+/*#########################################
+
+           Contact section
+
+##########################################*/
+#contact .contact-section
+{
+   padding-top: 50px;
+    padding-bottom: 50px;
+}
+.btn-success
+{
+    background: #007aff;
+}
+.contact-info
+{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.contact-info h2
+{
+    font-size: 22px;
+    font-weight: 600;
+}
+.contact-form-section
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-info p
+{
+    font-size: 17px;
+    font-weight: 400;
+    color: #222;
+}
+
+.footer-menus li
+{
+    padding-bottom: 15px;
+}
